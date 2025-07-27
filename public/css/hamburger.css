@@ -1,0 +1,44 @@
+.navbar-toggler {
+    border: none; /* Menghilangkan border */
+    background-color: transparent; /* Menghilangkan background */
+    padding: 0; /* Menghilangkan padding */
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 30px; /* Lebar icon */
+    height: 30px; /* Tinggi icon */
+    position: relative; /* Mengatur posisi */
+}
+
+/* Garis atas */
+.navbar-toggler-icon:before,
+.navbar-toggler-icon:after {
+    content: '';
+    display: block;
+    width: 100%; /* Lebar garis */
+    height: 4px; /* Ketebalan garis */
+    background-color: rgba(255, 255, 255, 0.8); /* Warna garis */
+    border-radius: 2px; /* Membuat garis membulat */
+    transition: all 0.3s ease; /* Animasi */
+}
+
+/* Jarak antara garis */
+.navbar-toggler-icon:before {
+    position: absolute; /* Mengatur posisi */
+    top: 8px; /* Jarak dari atas */
+}
+
+.navbar-toggler-icon:after {
+    position: absolute; /* Mengatur posisi */
+    bottom: 8px; /* Jarak dari bawah */
+}
+
+/* Efek saat icon aktif */
+.navbar-toggler.collapsed .navbar-toggler-icon:before {
+    transform: translateY(12px) rotate(45deg); /* Rotasi garis atas */
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon:after {
+    transform: translateY(-12px) rotate(-45deg); /* Rotasi garis bawah */
+}

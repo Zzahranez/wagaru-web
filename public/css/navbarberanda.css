@@ -1,0 +1,41 @@
+
+    /* Warna dan efek hover navbar */
+    .nav-link {
+        transition: color 0.4s ease, background-color 0.4s ease;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    /* Warna saat dihover */
+    .nav-link:hover {
+        color: #f0a500;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Warna untuk link yang aktif */
+    .nav-link.active {
+        color: #f0a500;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-bottom: 5px solid #f0a500;
+    }
+
+    /* Hover untuk tombol menu (hamburger menu) di layar kecil */
+    .navbar-toggler {
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-toggler:hover {
+        transform: rotate(90deg);
+    }
+
+    /* Animasi untuk dropdown */
+    .dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .dropdown-menu.show {
+        opacity: 1;
+        visibility: visible;
+    }

@@ -1,0 +1,47 @@
+.sidebar-toggler {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.sidebar-toggler-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.sidebar-toggler-icon:before,
+.sidebar-toggler-icon:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-toggler-icon:before {
+    position: absolute;
+    top: 8px;
+}
+
+.sidebar-toggler-icon:after {
+    position: absolute;
+    bottom: 8px;
+}
+
+.sidebar-toggler.collapsed .sidebar-toggler-icon:before {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.sidebar-toggler.collapsed .sidebar-toggler-icon:after {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+@media (min-width: 992px) { /* Ubah 992px sesuai breakpoint yang Anda gunakan untuk desktop */
+    .navbar-nav .nav-item:not(.dropdown) {
+        display: none; /* Sembunyikan semua item kecuali dropdown */
+    }
+}

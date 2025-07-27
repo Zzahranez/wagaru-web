@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #7da4a1;
+    --secondary-color: #5a8f8c;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: var(--primary-color);
+    min-height: 100vh;
+}
+
+.sidebar .nav-link {
+    color: white;
+    padding: 10px 20px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--secondary-color);
+}
+
+.content {
+    padding: 20px;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:focus:active {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
