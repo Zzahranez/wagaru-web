@@ -1,11 +1,18 @@
 * text=auto eol=lf
 
+# Force GitHub to treat these as non-primary code (ignored in language stats)
+python/* linguist-vendored
+venv/* linguist-vendored
+*.py linguist-vendored
+
+# Language diffs for GitHub
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html
 *.md diff=markdown
 *.php diff=php
 
+# Ignore export when creating archives
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
